@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: ecommerce-webapp
+server:
+  port: 5050
+  error:
+    whitelabel:
+      enabled: true
+      
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${random.value}
+    lease-renewal-interval-in-seconds: 100
+    lease-expiration-duration-in-seconds: 300
+  client:
+    service-url:
+      defaultZone: http://localhost:5001/eureka
+      
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          enabled: false
+        isolation:
+          thread:
+            timeoutInMilliseconds: 10000

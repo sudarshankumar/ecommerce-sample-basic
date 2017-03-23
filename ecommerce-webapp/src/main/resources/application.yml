@@ -1,0 +1,13 @@
+spring:
+  mvc:
+    view:
+      suffix: .jsp
+      prefix: /templates/
+      
+      
+pivotal:
+  info:
+    product.add.message: Product saved successfully.
+    product.remove.message: Product removed successfully.
+    product.not.found: Products not found. Please add a product.
+    price.not.found: Price details not found.
