@@ -1,0 +1,6 @@
+server:
+  port: 5555
+  
+turbine:
+  app-config: turbine
+  cluster-name-expression: turbine
